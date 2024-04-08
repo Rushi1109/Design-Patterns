@@ -6,6 +6,7 @@ public:
 	virtual ~Command() = default;
 
 	virtual int execute(int val) = 0;
+	virtual int undo(int val) = 0;
 };
 
 #endif

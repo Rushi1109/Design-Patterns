@@ -13,6 +13,10 @@ public:
 		return currentVal - val;
 	}
 
+	int undo(int currentVal) override {
+		return currentVal + val;
+	}
+
 private:
 	int val;
 };
